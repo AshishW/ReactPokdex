@@ -1,0 +1,106 @@
+@media only screen and (max-width: 580px){
+    .card{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .pokemonImg{
+        animation-name: moveImg1;
+        animation-duration: 1s;
+        transform: translateX(0rem);
+        height: 20vh;
+        border-radius: 2.8rem 1.5rem 1.5rem 1.5rem;
+        margin-bottom: 4vh;
+    }
+    
+   
+}
+body{
+   background: url('https://cdn.pixabay.com/photo/2019/08/17/10/11/clean-4411905_1280.jpg') no-repeat center center fixed;
+   background-size: cover;
+}
+.card{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid rgb(65, 195, 255);
+    width: 85vw;
+    height: 65vh;
+    border-radius: 6rem 2rem 2rem 2rem;
+    background-color: #347ee04b;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    box-shadow: 1px 1px 10px 1px #1fd2ff;
+    animation-name: popup;
+    animation-duration: 1s;
+}
+.card:hover{
+    transition: 1s;
+    box-shadow: 1px 1px 10px 5px #2289ff;
+}
+.detail{
+  display: flex;
+  color: #e2fbff;
+  font-size: 1rem;
+  font-style: italic;
+  justify-content: center;
+  flex-direction: column;
+  height: 30vh;
+  text-shadow: 2px 2px 8px #0d9ab3;
+}
+img{
+    height: 40vh;
+    width: 30vw;
+    border-radius: 2rem;
+    animation-name: moveImg;
+    animation-duration: 1s;
+    box-shadow: 1px 1px 10px 6px #1fd2ff;
+    border-style: double;
+    transform: translateX(-4rem);
+}
+h3{
+    animation-name: text-enter;
+    animation-duration: 1s;
+}
+@keyframes popup{
+    from{
+        transition: transform 1s;
+        transform: scale(0.5);
+    }
+    to{
+        transform: scale(1);
+    }
+}
+@keyframes text-enter{
+    from{
+        transition: transform 1s;
+        transform:translateX(-4rem);
+    }
+    to{
+        transform: translateX(0rem);
+    }
+}
+
+@keyframes moveImg{
+    from{
+      transform: translateX(0rem);
+    }
+    to{
+        transition: transform 1s;
+        transform: translateX(-4.5rem);
+    box-shadow: 1px 1px 10px 1px #3fb0f1;
+
+        
+    }
+}
+
+@keyframes moveImg1{
+    from{
+      transform: translateX(-5rem);
+    }
+    to{
+        transition: transform 1s;
+        transform: translateX(0rem);
+        box-shadow: 1px 1px 10px 1px #3fb0f1; 
+    }
+}

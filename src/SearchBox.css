@@ -1,0 +1,19 @@
+.searchBox{
+    display: flex;
+    justify-content: center;
+}
+input{
+    padding: 15px 15px;
+    text-align: center;
+    font-size: 1rem;
+    background-color: transparent;
+    border: 2px solid rgb(159, 212, 255);
+    box-shadow: 1px 1px 10px 1px #1fd2ff;
+    color: rgb(206, 237, 255);
+    text-shadow: 2px 2px 8px #0d9ab3;
+    font-weight: bold;
+}
+input:focus{
+    outline: none;
+    box-shadow: 1px 1px 10px 1px #dca1ff;
+}
