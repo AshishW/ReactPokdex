@@ -6,8 +6,8 @@ const Card =({id, name, height, weight, image}) =>{
            <img className='pokemonImg' src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${id}.png`} alt = 'pokeball.png'/>
            <div className = 'detail'>
              <h3>{`Name: ${name}`}</h3>
-             <h3>{`Height: ${height}`}</h3>
-             <h3>{`Weight: ${weight}`}</h3> 
+             <h3>{`Height (in dm): ${height}`}</h3>
+             <h3>{`Weight (in hg): ${weight}`}</h3> 
            </div>
         </div>
     );
