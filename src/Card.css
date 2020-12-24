@@ -15,10 +15,6 @@
     
    
 }
-body{
-   background: url('https://cdn.pixabay.com/photo/2019/08/17/10/11/clean-4411905_1280.jpg') no-repeat center center fixed;
-   background-size: cover;
-}
 .card{
     display: flex;
     justify-content: center;
