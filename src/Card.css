@@ -59,6 +59,11 @@ h3{
     animation-name: text-enter;
     animation-duration: 1s;
 }
+
+
+
+
+
 @keyframes popup{
     from{
         transition: transform 1s;
